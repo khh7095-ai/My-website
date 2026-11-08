@@ -60,13 +60,13 @@
             padding: 6rem 2rem;
         }
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 1rem;
             font-weight: 400;
             letter-spacing: -1px;
         }
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             opacity: 0.9;
         }
@@ -84,7 +84,7 @@
         }
         section {
             max-width: 1000px;
-            margin: 3rem auto;
+            margin: 3.5rem auto;
             padding: 0 2rem;
         }
         section h2 {
@@ -93,7 +93,7 @@
             color: var(--primary-color);
             font-size: 2rem;
         }
-        .features {
+        .features, .reviews {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
@@ -110,6 +110,29 @@
             margin-bottom: 1rem;
             color: var(--primary-color);
         }
+        /* 약력 및 소개 박스 스타일 */
+        .profile-box {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            line-height: 1.8;
+        }
+        .profile-box ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .profile-box li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .profile-box li::before {
+            content: "▪";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
         .form-box {
             background: var(--card-bg);
             padding: 2.5rem;
@@ -124,7 +147,7 @@
             margin-bottom: 0.5rem;
             font-weight: bold;
         }
-        .form-group input, .form-group textarea, .form-group select {
+        .form-group input, .form-group textarea {
             width: 100%;
             padding: 0.8rem;
             border: 1px solid #ced6e0;
@@ -149,7 +172,8 @@
             <div class="logo">메움 줄눈</div>
             <nav>
                 <a href="#about">시공특징</a>
-                <a href="#services">시공범위</a>
+                <a href="#profile">대표약력</a>
+                <a href="#reviews">시공후기</a>
                 <a href="#contact">견적문의</a>
             </nav>
         </div>
@@ -179,6 +203,35 @@
         </div>
     </section>
 
+    <!-- 대표자 약력 섹션 -->
+    <section id="profile">
+        <h2>대표자 약력 및 소개</h2>
+        <div class="profile-box">
+            <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">대표: 가 은 서</h3>
+            <p style="color: #57606f; margin-bottom: 1.5rem;">"내 집처럼 안전하고 정직한 시공을 약속드립니다."</p>
+            <ul>
+                <li>프리미엄 타일 줄눈 및 오염방지 코팅 전문 시공 전문가</li>
+                <li>기초 백시멘트 제거 공정부터 마감까지 1:1 책임 시공</li>
+                <li>고객 만족 중심의 철저한 사후 A/S 관리</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 시공 후기 섹션 -->
+    <section id="reviews">
+        <h2>실제 고객 시공 후기</h2>
+        <div class="reviews">
+            <div class="card">
+                <h3>인천 남동구 OO아파트</h3>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">"화장실 줄눈 시공 맡겼는데 곰팡이 걱정 없어지고 너무 깔끔해졌어요. 꼼꼼하게 잘해주셔서 감사합니다!"</p>
+            </div>
+            <div class="card">
+                <h3>시흥시 OO신축 빌라</h3>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">"상담부터 시공까지 사장님이 너무 친절하시고 마감이 완벽합니다. 주변에도 소문 많이 낼게요!"</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <h2>견적 및 시공 문의</h2>
         <div class="form-box">
@@ -191,6 +244,7 @@
                     <label for="area">시공 지역 / 건물 유형</label>
                     <input type="text" id="area" placeholder="예: 인천 남동구 / 신축 아파트 34평">
                 </div>
+                .
                 <div class="form-group">
                     <label for="message">문의 내용</label>
                     <textarea id="message" rows="4" placeholder="욕실 바닥, 주방 싱크대 등 시공을 원하시는 범위를 적어주세요."></textarea>
