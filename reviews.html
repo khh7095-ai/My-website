@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시공후기 - 메움 줄눈</title>
+    <style>
+        :root {
+            --primary-color: #2f3542;
+            --accent-color: #57606f;
+            --text-dark: #2f3542;
+            --bg-light: #f1f2f6;
+            --card-bg: #ffffff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Malgun Gothic', sans-serif; }
+        body { color: var(--text-dark); line-height: 1.6; background-color: var(--bg-light); }
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); letter-spacing: 2px; text-decoration: none; }
+        nav a { margin-left: 1.5rem; text-decoration: none; color: var(--text-dark); font-weight: 500; }
+        nav a:hover, nav a.active { color: #1e272e; font-weight: bold; }
+        section { max-width: 900px; margin: 4rem auto; padding: 0 2rem; }
+        section h2 { text-align: center; margin-bottom: 2.5rem; color: var(--primary-color); font-size: 2rem; }
+        .reviews { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 6px; box-shadow: 0 4px 6px rgba(0,0,0,0.03); border-left: 4px solid var(--primary-color); }
+        .card h3 { margin-bottom: 0.8rem; color: var(--primary-color); font-size: 1.2rem; }
+        .card p { font-size: 1rem; color: #57606f; }
+        footer { background-color: #1e272e; color: #a4b0be; text-align: center; padding: 3rem 2rem; margin-top: 6rem; }
+        footer p { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">메움 줄눈</a>
+            <nav>
+                <a href="index.html">홈</a>
+                <a href="profile.html">대표약력</a>
+                <a href="reviews.html" class="active">시공후기</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <h2>실제 고객 시공 후기</h2>
+        <div class="reviews">
+            <div class="card">
+                <h3>인천 남동구 OO아파트</h3>
+                <p>"화장실 줄눈 시공 맡겼는데 곰팡이 걱정 없어지고 너무 깔끔해졌어요. 기초 작업부터 꼼꼼하게 잘해주셔서 대만족입니다!"</p>
+            </div>
+            <div class="card">
+                <h3>시흥시 OO신축 빌라</h3>
+                <p>"상담부터 시공까지 사장님이 너무 친절하시고 마감이 완벽합니다. 물때도 안 끼고 청소가 너무 편해졌어요. 주변에도 소문 많이 낼게요!"</p>
+            </div>
+            <div class="card">
+                <h3>송도 OO 오피스텔</h3>
+                <p>"거실이랑 주방까지 전체 시공했는데 집안 분위기가 확 살아났습니다. 가격도 합리적이고 마감 처리도 깔끔해서 믿음이 갑니다."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>메움 줄눈</strong> | 대표자: 가은서</p>
+        <p>사업장 소재지: 인천광역시 남동구 남촌동</p>
+        <p>연락처: 010-2312-3351</p>
+        <p style="margin-top: 1.5rem; font-size: 0.9rem;">Copyright &copy; 메움 줄눈 All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
