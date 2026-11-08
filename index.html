@@ -6,10 +6,11 @@
     <title>메움 줄눈 - 프리미엄 타일 줄눈 시공 전문</title>
     <style>
         :root {
-            --primary-color: #1e3a8a;
-            --accent-color: #3b82f6;
-            --text-dark: #1f2937;
-            --bg-light: #f8fafc;
+            --primary-color: #2f3542;
+            --accent-color: #57606f;
+            --text-dark: #2f3542;
+            --bg-light: #f1f2f6;
+            --card-bg: #ffffff;
         }
         * {
             margin: 0;
@@ -41,6 +42,7 @@
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary-color);
+            letter-spacing: 2px;
         }
         nav a {
             margin-left: 1.5rem;
@@ -49,10 +51,10 @@
             font-weight: 500;
         }
         nav a:hover {
-            color: var(--accent-color);
+            color: #747d8c;
         }
         .hero {
-            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(47, 53, 66, 0.75), rgba(47, 53, 66, 0.75)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 6rem 2rem;
@@ -60,6 +62,8 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: -1px;
         }
         .hero p {
             font-size: 1.2rem;
@@ -67,16 +71,16 @@
             opacity: 0.9;
         }
         .btn {
-            background-color: var(--accent-color);
+            background-color: var(--primary-color);
             color: white;
             padding: 0.8rem 2rem;
-            border-radius: 5px;
+            border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
             transition: background 0.3s;
         }
         .btn:hover {
-            background-color: #2563eb;
+            background-color: #1e272e;
         }
         section {
             max-width: 1000px;
@@ -95,21 +99,22 @@
             gap: 1.5rem;
         }
         .card {
-            background: white;
+            background: var(--card-bg);
             padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
             text-align: center;
+            border-top: 3px solid var(--primary-color);
         }
         .card h3 {
             margin-bottom: 1rem;
             color: var(--primary-color);
         }
         .form-box {
-            background: white;
+            background: var(--card-bg);
             padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
         }
         .form-group {
             margin-bottom: 1.2rem;
@@ -122,12 +127,12 @@
         .form-group input, .form-group textarea, .form-group select {
             width: 100%;
             padding: 0.8rem;
-            border: 1px solid #cbd5e1;
+            border: 1px solid #ced6e0;
             border-radius: 4px;
         }
         footer {
-            background-color: #0f172a;
-            color: #94a3b8;
+            background-color: #1e272e;
+            color: #a4b0be;
             text-align: center;
             padding: 3rem 2rem;
             margin-top: 4rem;
@@ -143,25 +148,25 @@
         <div class="nav-container">
             <div class="logo">메움 줄눈</div>
             <nav>
-                <a href="#about">소개</a>
-                <a href="#services">시공안내</a>
+                <a href="#about">시공특징</a>
+                <a href="#services">시공범위</a>
                 <a href="#contact">견적문의</a>
             </nav>
         </div>
     </header>
 
     <div class="hero">
-        <h1>공간의 가치를 높이는 프리미엄 줄눈 시공</h1>
-        <p>곰팡이 방지, 간편한 청소, 깔끔한 인테리어의 완성</p>
+        <h1>작은 틈까지 꼼꼼하게, 공간의 완성도를 높이다</h1>
+        <p>욕실 | 주방 | 현관 | 거실 | 베란다 | 세탁실 줄눈 시공 전문</p>
         <a href="#contact" class="btn">간편 견적 문의하기</a>
     </div>
 
     <section id="about">
-        <h2>왜 메움 줄눈인가요?</h2>
+        <h2>메움 줄눈의 특별함</h2>
         <div class="features">
             <div class="card">
-                <h3>친환경 프리미엄 안료</h3>
-                <p>변색이 적고 인체에 무해한 최고급 자재만을 사용하여 오랫동안 깨끗함을 유지합니다.</p>
+                <h3>오염 방지 코팅 마감</h3>
+                <p>물때와 생활 얼룩이 스며들지 않도록 틈새 없이 코팅하여 오랫동안 청결함을 유지합니다.</p>
             </div>
             <div class="card">
                 <h3>하자 없는 꼼꼼한 시공</h3>
@@ -198,7 +203,8 @@
     <footer>
         <p><strong>메움 줄눈</strong> | 대표자: 가은서</p>
         <p>사업장 소재지: 인천광역시 남동구 남촌동</p>
-        <p>연락처: 010-0000-0000 (상담 환영)</p>
+        <p>연락처: 010-2312-3351</p>
+        <p>계좌번호: NH농협은행 3022180391661 (메움 가은서)</p>
         <p style="margin-top: 1.5rem; font-size: 0.9rem;">Copyright &copy; 메움 줄눈 All rights reserved.</p>
     </footer>
 
